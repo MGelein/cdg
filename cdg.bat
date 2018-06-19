@@ -25,3 +25,4 @@ If %cnt% EQU 1 (
 )
 :: Remove temp file
 del temp.txt
+exit
