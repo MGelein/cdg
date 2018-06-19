@@ -12,6 +12,8 @@ For /f %%j in ('Find "" /v /c ^<temp.txt') Do Set /a cnt=%%j
 :: Check if there is only one result, if so, cd to it
 If %cnt% EQU 1 (
     start temp.bat
+    del temp.txt
+    exit
 ) else (
     :: Read the file into an array
     <temp.txt (
@@ -25,4 +27,3 @@ If %cnt% EQU 1 (
 )
 :: Remove temp file
 del temp.txt
-exit
