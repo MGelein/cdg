@@ -28,7 +28,6 @@ if len(allDirs) == 0:
 # If only one result was found, make a bat file
 file = open("temp.bat", "w")
 file.write(("start cmd /k cd " + allDirs[0][1]))
-file.write("\ndel temp.bat")
 file.write("\nexit")
 file.close()
 

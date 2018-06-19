@@ -1,6 +1,8 @@
 @echo off
 setlocal enableDelayedExpansion
 
+:: navigate to the correct folder
+cd C:\PATH\
 ::Save the command output to a text file
 python cdg.py %* > temp.txt
 
